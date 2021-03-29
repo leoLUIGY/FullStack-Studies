@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" width="100%">
+        <tr>
+            <th colspan="3">Cells here</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td colspan="3">Cell 1</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Cell 2</td>
+                <td colspan="2">Cell 2.1</td>
+            </tr>
+            <tr>
+                <td width="30%">Cell 1.1</td>
+                <td>Cell 1.1</td>
+        
+            </tr>
+        </tbody>
+    </table>
+
+    <style>
+        .classNameHere{padding: 40px;
+         color:white;
+          background-color:black;
+          }
+          .upperCase{
+              text-transform:uppercase;
+          }
+
+          .lowerCase{
+              text-transform: lowercase;
+          }
+          #testingId{
+              color: red;
+              background-color: white;
+          }
+    </style>
+
+    <div class="classNameHere">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Tempora perspiciatis a in, cupiditate molestiae est quasi porro minima quas incidunt 
+        aliquid consequuntur quidem,
+         veritatis quam delectus libero asperiores. Esse, deleniti.
+    </div>
+    <div class=" upperCase" id="testingId">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Tempora perspiciatis a in, cupiditate molestiae est quasi porro minima quas incidunt 
+        aliquid consequuntur quidem,
+            veritatis quam delectus libero asperiores. Esse, deleniti.
+    </div>
+    <div class="classNameHere lowerCase">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Tempora perspiciatis a in, cupiditate molestiae est quasi porro minima quas incidunt 
+        aliquid consequuntur quidem,
+            veritatis quam delectus libero asperiores. Esse, deleniti.
+    </div>
+
+    <h3>Format code</h3>
+    <pre>
+        some stuff here   &lt;b&gt;this is bold&lt;/b&gt;
+        Secons line here 
+    </pre>
+
+    <h3>Forms</h3>
+    <form method="GET" action="somepage.html">
+        <div>
+            <input required type="text" placeholder="Enter your name">
+        </div>
+        
+        <div>
+            <textarea required cols="30" rows="5" placeholder="digite algo"></textarea>
+       </div>
+
+       <div>
+            <button required type="submit">Click me</button>
+       </div>
+
+       <div>
+           <select name="selected_option" id="">
+               <option value="" disabled="disabled"> - Disabled - </option>
+                <option value="value1">value1</option>
+                <option value="value2">value2</option>
+                <option value="value3">value3</option>
+                <option value="value4">value4</option>
+                <option value="value5">value5</option>
+                <option value="value6">value6</option>
+                <option value="value7">value7</option>
+                <option value="default" selected="selected">Selected</option>
+           </select>
+       </div>
+    </form>
+
+    <h3>embebs</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jyRkiHDgj-A" frameborder="0" allowfullscreen></iframe>
+
+
+    <p>
+        &lt;code&gt;
+            this is a code
+        &lt;/code&gt;
+        <sup>&copy;</sup> 2022
+    </p>
+</body>
+</html>

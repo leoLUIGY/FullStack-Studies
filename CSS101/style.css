@@ -1,0 +1,34 @@
+body{
+    background-color: black;
+    color:white;
+}
+#box{
+    width:200px;
+    height: 200px;
+    padding:10px;
+    border: 2px solid white;
+    background-image: url("../HTML101/Menu.png");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 0 50% 0 50%;
+    box-shadow: 2px 2px 15px inset gray;
+}
+#boxx{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    background-color: yellow;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    opacity: 0.5;
+}
+
+#inline{
+    margin: auto;
+    display: block;
+    border: 1px solid black;
+   
+    max-width: 500px;
+}
