@@ -1,0 +1,77 @@
+/*ALL ELEMENTS*/
+body, html{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* .container{ */
+    /* border:1px solid white;   */
+    
+/* } */
+.h1{
+    font-weight: 500;
+    color: rgb(209, 206, 206);
+}
+.p{
+    font-size:15px;
+    color: rgba(209, 206, 206, 0.863);
+    text-align: center;
+    margin:0;
+}
+.h3{
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(209, 206, 206, 0.863);
+}
+
+.cont{
+    height:15%;
+}
+.contInfo{
+    /* border: 1px solid black; */
+    height:85%;
+}
+.item3{
+    height:180px;
+}
+.item6{
+    height:250px;
+}
+.mainSection1{
+    height: 680px;
+    
+}
+.containerMainInfo{
+    padding-top: 120px;
+    padding-left:50px;
+    padding-right:50px;
+    height:500px;
+}
+.containerMainInfo div{
+    padding-right: 70px;
+}
+.containerFooter .social img{
+    width: 25px;
+    height: 20px;
+}
+
+button{
+   
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border-color:  rgb(209, 206, 206);
+    color: rgb(209, 206, 206);
+    background-color: rgba(0,0,0,0);
+    right: 50px;
+}
+input{
+    width: 200px;
+    background-color: rgba(0,0,0,0);
+    border-radius:5px;
+    border: 2px solid rgba(146, 85, 69, 0.842);
+    height: 30px;
+}
+input::placeholder{
+    font-size: 12px;
+}
