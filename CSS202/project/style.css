@@ -32,18 +32,18 @@ header{
 
 /*NAVEGATION*/
 .container{
-    padding: 0 50px;
+    padding: 0 35px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height:80px;
     /* border: 2px solid black; */
 }
-.container div{
+.container div, .miniBox{
     width: 35px;
     height: 30px;
 }
-.container div .line{
+.container div .line, .miniBox .line{
     width: 35px;
     margin-top: 4px;
     height: 5px;
@@ -99,7 +99,7 @@ header{
 
 /*==========MAIN===========*/
 .containerMain{
-    padding: 0 50px;
+    padding: 0 70px;
     height:1000px;
     background-color: rgb(77, 74, 74);
 }
@@ -188,14 +188,138 @@ header{
 }
 
 
-/*============FOOTER==========*/
+/*============SECTION MAIN==========*/
 
 .containerMainInfo{
-    height: 300px;
+    height: 350px;
+    padding: 0 70px;
+    display: flex;
     background-color: rgb(211, 208, 208);
 }
+.containerMainInfo div{
+    position: relative;
+    top: 80px;
+    padding-right: 50px;
+    
+}
+.history{
+    /* border: 1px solid black; */
+    width: 500px;
+    height: 200px;
+}
+.developers{
+    /* border: 1px solid black; */
+    width: 200px;
+    height: 200px;
+}
+.products{
+    /* border: 1px solid black; */
+    width: 150px;
+    height: 200px;
+}
+.containerMainInfo h3{
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.774);
+    font-size: 13px;
+}
+.containerMainInfo p{
+    color: rgba(209, 71, 37, 0.842);
+    font-weight: 600;
+    font-size:12px;
+    padding: 4px 0;
+}
 
+
+
+
+/*============FOOTER===========*/
 .containerFooter{
+    display: flex;
+
+    padding: 0 70px;
+    align-items: center;
+    justify-content: space-between;
     height: 100px;
     background-color: rgb(24, 23, 23);
+}
+/* .containerFooter .miniBox{ */
+    /* border: 1px solid red; */
+/* } */
+.containerFooter .social{
+    /* border: 1px solid red; */
+   
+    width: 150px;
+    height: 80px;
+}
+.containerFooter .social h3{
+    font-size:12px;
+    color:rgba(209, 206, 206, 0.616);
+}
+.containerFooter .social div{
+    display: flex;
+    justify-content: space-between
+}
+.containerFooter .social img{
+    width: 25px;
+    height: 20px;
+}
+.containerFooter .infosFooter{
+    width: 450px;
+    height: 60px;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+.containerFooter .infosFooter > div{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.containerFooter .infosFooter div a{
+    font-size:12px;
+    color:rgba(209, 206, 206, 0.616);
+  }
+.containerFooter .infosFooter div input{
+    width: 200px;
+    background-color: rgba(0,0,0,0);
+    border-radius:5px;
+    border: 2px solid rgba(146, 85, 69, 0.842);
+    height: 30px;
+}
+.containerFooter .infosFooter div input::placeholder{
+    font-size: 12px;
+}
+.containerFooter .blockYellow{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    position: absolute;
+    left:210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(252, 252, 98, 0.842);
+}
+.containerFooter .blockYellow div{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid  rgba(53, 52, 52, 0.856);
+}
+
+.containerFooter .infosFooter div .email{ 
+    /* border: 2px solid rgba(209, 71, 37, 0.842); */
+    padding-top:10px;
+    width: 200px;
+    height: 25px;
+   
+}
+.containerFooter .infosFooter div .email p{ 
+   margin:0;
+   padding: 0;
+   color:rgba(209, 206, 206, 0.616);
+    text-align: initial;
+   font-size: 11px;
 }
