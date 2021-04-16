@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+
+    <body>
+        <h1>What is an API</h1>
+        <h2>Application Programming Interface</h2>
+        <p>But not a "visual" interface like what we see in this presentation</p>
+        <h3><strong>It's how one computer can talk to another computer</strong></h3>
+        <p>it doesn't matter what programming language you're using.
+         JavaScript, Python, PHP, Java, C and every other modern language supports RESTful APIs</p>
+
+         <h2>There are many types of APIs</h2>
+         <h3>But the RESTful APIs are most commonly talked about these days</h3>
+         <h3>RESTful APIs are what we're talking about today, too.</h3>
+         <p>Think of an API as a waiter as a restaurant</p>
+         <p>The waiter relays the message to the kitchen</p>
+         <p>Then the waiter brings your food to you</p>
+         <h2>RESTful APIs are meant to be simple</h2>
+         <h3>Let's look at a real life example with actual computers</h3>
+         <p>This is a site that uses an API to collect flight prices from other websites</p>
+         <p>These are airline services. They hold all the data</p>
+         <p>Skyscanner will ask each one for flight data</p>
+         <p>Now you can see all the flight prices from other websites</p>
+         <h2>Computers use APIs to talk to each other over the internet</h2>
+         <h3>What programming languages can we use?</h3>
+         <ul>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>Ruby</li>
+            <li>Etc</li>
+         </ul>
+
+         <h2>What are RESTful APIs</h2>
+         <h3>REST is a type of API</h3>
+         <h3>REpresentational State Transfer</h3>
+
+         <h3>Simply put:</h3>
+         <p>Client computer asks another computers for data, or to take an action</p>
+         <h2>JSON</h2>
+         <h3>JavaScript Object Notation</h3>
+         <p>Most languages hava a data structure that looks lika a JavaScript Object</p>
+         <p>One day, someone decided it should be a standard</p>
+         <p>Then it became the standard</p>
+
+        <h2>Request Methods</h2>
+        <ul>
+            <li>HTTP GET</li>
+            <li>HTTP POST</li>
+            <li>HTTP PUT</li>
+            <li>HTTP DELETE</li>
+            <li>HTTP PATCH</li>
+        </ul>
+        <h3>GET Request</h3>
+        <h3>How do the work?</h3>
+        <ul>
+            <li>When you lead a website That's a GET request</li>
+            <li>It's a request to get data from another computer</li>
+            <li>You're simply asking for data and you're not asking to perform a task</li>
+            <li>You're not creating, updating or deletig data</li>
+            <li>Most common request type</li>
+         </ul>
+        <table>
+            <tr>
+                <td>HTTP method</td>
+                <td>CRUD Operation</td>
+                <td>example URL(s)</td>
+            </tr>
+            <tr>
+                <td>GET</td>
+                <td>Read</td>
+                <td>HTTP GET https://...</td>
+            </tr>
+        </table>
+
+        <h2>POST Request</h2>
+        <h3>How do the work</h3>
+        <ul>
+            <li>Do not go through the standard URL, but use a URL as the endpoint</li>
+            <li>Ask another computer to create a new resource</li>
+            <li>Returns data about newly created resource</li>
+        </ul>
+          <table>
+            <tr>
+                <td>HTTP method</td>
+                <td>CRUD Operation</td>
+                <td>example URL(s)</td>
+            </tr>
+            <tr>
+                <td>GET</td>
+                <td></td>
+                <td>HTTP GET https://...</td>
+            </tr>
+            <tr>
+                <td>POST</td>
+                <td>Creat</td>
+                <td>HTTP POST https://...</td>
+            </tr>
+        </table>
+
+         <h2>DELETE Request</h2>
+        <h3>How do the work</h3>
+        <ul>
+            <li>Do not go through the standard URL, but use a URL as the endpoint</li>
+            <li>Ask another computer to delete a single resource or a list of resource</li>
+            <li>Use with caution</li>
+           
+        </ul>
+          <table>
+            <tr>
+                <td>HTTP method</td>
+                <td>CRUD Operation</td>
+                <td>example URL(s)</td>
+            </tr>
+            <tr>
+                <td>GET</td>
+                <td></td>
+                <td>HTTP GET https://...</td>
+            </tr>
+            <tr>
+                <td>POST</td>
+                <td>Creat</td>
+                <td>HTTP POST https://...</td>
+            </tr>
+             <tr>
+                <td>DELETE</td>
+                <td>Delete</td>
+                <td>HTTP DELETE https://...</td>
+            </tr>
+        </table>
+        
+          <h2>PUT/PATCH Request</h2>
+        <h3>How do the work</h3>
+        <h3>PATCH Request</h3>
+        <ul>
+            <li>Do not go through the standard URL, but use a URL as the endpoint</li>
+            <li>Ask another computer to update a piece of a resource</li>
+            <li>Are not fully supported by all browsers or frameworks, so we typically fall back on PUT requests</li>
+            <li>Example: Updating a users first name</li>
+           
+        </ul>
+        <h3>PUT Request</h3>
+        <ul>
+            <li>Do not go through the standard URL, but use a URL as the endpoint</li>
+            <li>Ask another computer to update an entire resource</li>
+            <li>if the resource doesn't exist, the API might decide to CREATE (CRUD) the resource</li>
+           
+        </ul>
+          <table>
+            <tr>
+                <td>HTTP method</td>
+                <td>CRUD Operation</td>
+                <td>example URL(s)</td>
+            </tr>
+            <tr>
+                <td>GET</td>
+                <td></td>
+                <td>HTTP GET https://...</td>
+            </tr>
+            <tr>
+                <td>POST</td>
+                <td>Creat</td>
+                <td>HTTP POST https://...</td>
+            </tr>
+             <tr>
+                <td>DELETE</td>
+                <td>Delete</td>
+                <td>HTTP DELETE https://...</td>
+            </tr>
+             <tr>
+                <td>PUT</td>
+                <td>Update/replace</td>
+                <td>HTTP PUT https://...</td>
+            </tr>
+             <tr>
+                <td>PATCH</td>
+                <td>Partial Update/ Modify</td>
+                <td>HTTP PATCH https://...</td>
+            </tr>
+        </table>
+            
+       <h2>APIs can be written in almost any server-side language</h2>
+       <h3>APIs will generally return one of two types data structudes:</h3>
+       <h3>JSON or XML</h3>
+       <p>Browsers use JavaScript for thier API requests</p>
+       <p>Servers use any language that runs on that computer</p>
+
+       <h2>Common HTTP Status Codes </h2>
+       <h3>Healthy Responses</h3>
+       <ul>
+            <li>
+                200 - OK
+                <p>Request accepted</p>
+            </li>
+            <li>
+                201 - Created
+                <p>POST requests often return 201s when a resource is created</p>
+            </li>
+            <li>
+                202 - Accepted
+                <p>when a request is accepted but its not done processing
+                Maybe the task goes into a queue</p>
+            </li>
+
+       </ul>
+       <h3>Redirect Responses</h3>
+       <ul>
+            <li>
+                301 - Moved Permanently
+                <p>when the endpoint has permanently changed. Update your endpoint</p>
+            </li>
+            <li>
+                302 - Found
+                <p>The endpoint you're accessing is temporanly moved to somewhere else </p>
+            </li>
+
+       </ul>
+
+       <h3>Client Responses</h3>
+       <ul>
+            <li>
+                400 - Bad Request
+                <p>server cannot or will not process your request</p>
+            </li>
+            <li>
+                401 - Bad Unathorized
+                <p>you're not allowed here</p>
+            </li>
+            <li>
+                403 - Forbidden
+                <p>The servers undertands your requests but won't execute it</p>
+            </li>
+            <li>
+                404 - Not Found
+                <p>There's nothing here</p>
+            </li>
+            <li>
+                405 - Method Not Allowed
+                <p>you're using the wrong HTTP Method</p>
+            </li>
+       </ul>
+       <h3>Server Responses/h3>
+       <ul>
+            <li>
+                500 - Internal Server Error
+                <p>The server has a problem and couldn't process the request</p>
+            </li>
+           
+       </ul>
+    </body>
+</html>
