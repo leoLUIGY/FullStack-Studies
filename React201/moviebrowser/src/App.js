@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import AboutView from './components/AboutView';
+import MovieView from './components/MovieView';
 import SearchView from './components/SearchView';
 import {Switch, Route} from 'react-router-dom';
 
@@ -36,7 +37,7 @@ function App() {
         <Route path="/search">
           <SearchView keyword={searchText} searchResults={searchResults}/>
         </Route>
-
+        <Route path="/movies/:id" component={MovieView} />
       </Switch>
     </div>
   );
