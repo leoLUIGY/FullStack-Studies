@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 data-name="leonidas"> welcome to this page</h1>
+
+    <script>
+        window.onload = function() {
+            const name = document.querySelector("h1").dataset.name
+            alert("hello "+ name)
+        }
+        window.onbeforeunload = ()=>{
+            console.log("by by by")
+            return "Are you sure you want to leave? "
+        }
+    </script>
+</body>
+</html>
