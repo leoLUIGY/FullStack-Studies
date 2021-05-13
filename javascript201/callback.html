@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <h2></h2>
+    <h3></h3>
+    <div>
+
+    </div>
+    <script>
+        "use strict";
+        let name = "leonidas"
+        document.querySelector("h1").textContent = name
+        setTimeout(()=>{
+            document.querySelector("h2").textContent = "aqui estou"
+        }, 2500)
+        document.querySelector("h3").textContent = "final"
+
+
+        let count = 0;
+
+        let myInterval = setInterval(()=>{
+            document.querySelector("div").innerHTML += `<p>hello man...${count}</p>`
+            console.log(`hello man...${count}`)
+            count++;
+            if(count > 10){
+                clearInterval(myInterval)
+                document.querySelector("div").innerHTML += `<p>by by man</p>`
+            }
+        }, 1000)
+    </script>
+</body>
+</html>

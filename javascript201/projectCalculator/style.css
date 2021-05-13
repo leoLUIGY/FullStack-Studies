@@ -1,0 +1,31 @@
+body{
+    background-color:rgb(31, 29, 29);
+}
+#result{
+    background-color:rgb(192, 186, 186);
+    width:187px;
+    height:55px;
+    border: 2px solid rgb(3, 0, 0);
+}
+button{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.801);
+    border:none;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+}
+button:hover{
+    background-color: rgba(20, 20, 20, 0.616);
+}
+main{
+    background-color: rgba(0, 0, 0, 0.596);
+    border: 1px solid black;
+    width:255px;
+    height:360px;
+    margin:auto;
+    margin-top:100px;
+}
+#header{
+    display: flex;
+}
