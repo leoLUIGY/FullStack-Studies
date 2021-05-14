@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Guess a number between 0 and 100</h2>
+    <div></div>
+    <input type="text" />
+    <button>Verificar</button>
+    
+    <script>
+       
+        function game(){
+            const rand = Math.round(Math.random() * 100);
+            const resposta = document.querySelector("input");
+            const aviso = document.querySelector("div");
+            const butt = document.querySelector("button")
+            aviso.textContent =""
+            resposta.value = ""
+            console.log(rand)
+            butt.addEventListener("click", ()=>{
+                try{
+                    if(resposta.value == rand.toString()){
+                        aviso.textContent ="PARABENS VOCÊ ACERTOU, REINICIANDO..."
+                        setTimeout(()=>{
+                            game()
+                        }, 4000)
+                    } else{
+                        if(Number(resposta.value)< rand){
+                            aviso.textContent ="o valor é maior"
+                        } else{
+                            aviso.textContent ="o valor é menor"
+                        }
+                    }
+                } catch(error){
+                    console.log(error)
+                    aviso.textContent = "Apenas numeros são validos"
+                }
+            })
+        }
+        game()
+    </script>
+</body>
+</html>

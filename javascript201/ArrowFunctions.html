@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    </div>
+    <script>
+        let dates = document.querySelector("div")
+
+        //this is only to objets in function
+        function oldForm(){
+            dates.innerHTML += "<h1>Leonidas Luigy </h1>"
+            console.log("first")
+        }
+
+        //this is only to objects in the function
+        newOldForm = function(){
+            oldForm()
+            dates.innerHTML += "<h2>Programming </h2>"
+            console.log("second")
+        }
+
+        //this is to objects in all file
+        newRegularForm = () =>{
+            newOldForm()
+            
+            dates.innerHTML += "<h2>Lets start </h2>"
+            console.log("third")
+        }
+
+        newRegularForm()
+    </script>
+</body>
+</html>
